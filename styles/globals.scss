@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  --white: #fff;
+  --black: #000;
+
+  --radial: rgba(255, 225, 149, 1);
+  --radial-black: rgba(247, 213, 135, 1);
+
+  --blue-100: rgba(239, 243, 251, 1);
+  --blue-200: rgba(143, 191, 253, 0.5);
+  --blue-300: rgba(89, 183, 223, 1);
+  --blue-350: rgba(143, 168, 255, 1);
+
+  --black-900: rgba(16, 24, 34, 1);
+  --black-800: rgba(13, 22, 38, 1);
+  --black-700: rgba(10, 12, 16, 0.25);
+  --black-750: rgba(7, 9, 12, 1);
+
+  --gold-letter: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  --gold-900: rgba(255, 225, 149, 1);
+  --gold-950: rgba(242, 187, 90, 0.8768);
+  --gold-linear: rgba(255, 220, 143, 1);
+  --gold-linear-100: rgba(244, 205, 104, 0.76);
+
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+body{
+  background-color: rgba(5, 6, 7, 1);
+}
+
+p{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: start;
+  text-transform: capitalize;
+  color: #EFF3FB;
+}
+
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  top: 0;
+  height: 96px;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #101822;
+  width: 100%;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav span{
+  margin: 0 98px;
+  width: 162.46px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  width: 88em;
+}
+
+nav ul li{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 7px 9px;
+  margin: 0 31px;
+}
+
+ul li a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #FFFFFF;
+  display: flex;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+ul li :hover{
+  border-bottom: 1px solid #BF841A;
+}
+
+nav .icon_sun{
+  margin: 0 96px 0 34px;
+}
+
+header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 6em;
+}
+
+.direita{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg{
+  position: fixed;
+  z-index: -1;
+}
+
+.eclipse-1{
+  position: fixed;
+  width: 898px;
+  height: 1129px;
+  left: -96px;
+  top: 10px;
+  background: radial-gradient(58.12% 110.04% at 46.74% -1.76%, rgba(143, 191, 253, 0.5) 0%, rgba(38, 72, 122, 0.6) 29.63%, rgba(15, 18, 24, 0) 100%);
+  opacity: 0.35;
+  filter: blur(128px);
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+.space{
+  letter-spacing: 0.66em;
+}
+
+.eclipse-5{
+  position: fixed;
+  width: 54em;
+  height: 1012px;
+  left: 1061px;
+  top: -238px;
+  background: radial-gradient(62.65% 46.71% at 74.07% 12.71%, rgba(143, 191, 253, 0.5) 0%, rgba(38, 72, 122, 0.6) 29.63%, rgba(15, 18, 24, 0) 100%);
+  opacity: 57.5;
+}
+
+
+
+.button-1{
+  box-sizing: border-box;
+  padding: 2px 15px;
+  letter-spacing: 5px;
+  gap: 8px;
+  width: 180px;
+  height: 54px;
+  left: 0px;
+  top: 0px;
+  background: transparent;
+  color: white;
+  FONT-WEIGHT: 100;
+  border-style: s;
+  color: rgb(255, 229, 161);
+  border: 1px solid;
+  background: rgb(255,229,161);
+  background: linear-gradient(158deg, rgba(255,229,161,1) 0%, rgba(191,132,26,1) 2%, rgba(0,0,0,1) 38%);
+  border-image-source: linear-gradient(282.36deg, rgba(143, 168, 255, 0.2) 8.49%, rgba(0, 0, 0, 0) 41.39%),
+  linear-gradient(136.73deg, #FFE195 -6.74%, rgba(242, 187, 90, 0.876812) 3.22%, rgba(191, 122, 0, 0.75) 13.48%, rgba(191, 122, 0, 0) 49.53%, rgba(15, 18, 24, 0) 49.53%);
+  border-bottom-style: none;
+  border-right-style: none;
+  transition: 5s;
+}
+
+.button-1:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(158deg, rgba(0,0,0,1) 38%, rgba(191,132,26,1) 99%, rgba(255,229,161,1) 100%);
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: none;
+  border-left-style: none;
+  border-image-source: linear-gradient(282.36deg, rgba(143, 168, 255, 0.2) 8.49%, rgba(0, 0, 0, 0) 41.39%),
+  linear-gradient(136.73deg, #FFE195 -6.74%, rgba(242, 187, 90, 0.876812) 3.22%, rgba(191, 122, 0, 0.75) 13.48%, rgba(191, 122, 0, 0) 49.53%, rgba(15, 18, 24, 0) 49.53%);
+}
+
+
+
+.button-2{
+  border: 1px solid;
+  margin:0 56px;
+  border-image-source: linear-gradient(277.44deg, rgba(255, 220, 143, 0.2) 0%, rgba(0, 0, 0, 0) 40.35%);
+  /* Gold Linear */
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  border-radius: 5px;
+  /* Gold Button */
+  box-sizing: border-box;
+  /* Auto layout */
+  align-items: center;
+  padding: 0px 15px;
+  gap: 4px;
+  width: 170px;
+  height: 50px;
+  left: 236px;
+  top: 2px;
+  transition: 2s;
+}
+
+.button-2:hover{
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 90.84%, #FFCD74 95.06%);
+}
+
+.buttons-header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 8px;
+}
+
+h1{
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: -0.01em;
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  /* text-align: center;*/
+}
+
+.cabecalho-carrousel{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2em 6em;
+  width: 100%;
+}
+
+.cabecalho-carrousel h1{
+  font-size: 28px;
+  background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cabecalho-carrousel h1 a{
+  background: #fff;
+  -webkit-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+h2{
+  font: 600 64px sans-serif;
+  font-family: 'Cinzel', serif;
+  background: var(--gold-letter);
+}
+
+body, input, textarea, select, button{
+
+}
